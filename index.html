@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- Bootstrap styles first -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Our styles -->
+    <link href="haiku.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <h1>The Wisdom of the Haiku</h1>
+    <p>The Japanese poetry style of Haiku is hundreds of years old. Submit words below indicating the space
+        between sylables with a dash.('-')  For example, "com-pu-ter" or "pink" or "smil-ing." Depress the
+        'Generate Haiku' button and a new Haiku will be returned to you. Perhaps ancient wisdom will
+        be revealed to you.</p>
+    <form id="wordEntryForm">
+        <label for="wordEntry">Enter words here:</label>
+        <br>
+        <input type="text" id="wordEntry">
+        <br>
+        <span id="wordEntryCorrection" class="correction"></span>
+        <br>
+        <button type="submit" id="submitWord">Submit Word</button>
+        <button type="button" id="haikuGenerate">Generate Haiku</button>
+    </form>
+    <br>
+    <p id="haikuLineOne"></p>
+    <p id="haikuLineTwo"></p>
+    <p id="haikuLineThree"></p>
+
+<!-- jQuery first -- BEWARE OF THE SLIM VERSION FROM BOOTSTRAP -->
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
+<!-- Popper and Bootstrap second -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- Our code last -->
+<script src="haiku.js"></script>
+
+
+</body>
+</html>
