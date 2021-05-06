@@ -10,25 +10,27 @@
     <link href="haiku.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
-    <h1>The Wisdom of the Haiku</h1>
+    <h1 class="center">The Wisdom of the Haiku</h1>
     <p>The Japanese poetry style of Haiku is hundreds of years old. Submit words below indicating the space
-        between sylables with a dash.('-')  For example, "com-pu-ter" or "pink" or "smil-ing." Depress the
-        'Generate Haiku' button and a new Haiku will be returned to you. Perhaps ancient wisdom will
-        be revealed to you.</p>
+        between syllables with a dash.('-')  For example, "com-pu-ter" or "pink" or "smil-ing." Do not enter
+        words with more than seven syllables. Depress the 'Generate Haiku' button and a new Haiku will be
+        created for you. Perhaps ancient wisdom will be revealed.</p>
     <form id="wordEntryForm">
-        <label for="wordEntry">Enter words here:</label>
-        <br>
-        <input type="text" id="wordEntry">
-        <br>
-        <span id="wordEntryCorrection" class="correction"></span>
-        <br>
-        <button type="submit" id="submitWord">Submit Word</button>
-        <button type="button" id="haikuGenerate">Generate Haiku</button>
+        <div class="container">
+            <label for="wordEntry">Enter words here:</label>
+            <br>
+            <input type="text" id="wordEntry">
+            <br>
+            <span id="wordEntryCorrection" class="correction"></span>
+            <br>
+            <button type="submit" id="submitWord">Submit Word</button>
+            <button type="button" id="haikuGenerate">Generate Haiku</button>
+        </div>
     </form>
     <br>
-    <p id="haikuLineOne"></p>
-    <p id="haikuLineTwo"></p>
-    <p id="haikuLineThree"></p>
+    <p id="haikuLineOne" class="center haiku"></p>
+    <p id="haikuLineTwo" class="center haiku"></p>
+    <p id="haikuLineThree"class="center haiku"></p>
 
 <!-- jQuery first -- BEWARE OF THE SLIM VERSION FROM BOOTSTRAP -->
 <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
